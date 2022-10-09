@@ -24,15 +24,15 @@ function App() {
           <article className="titulo">Bienvenido</article>
         </div>
       </main>
-      <article className="pedidos">
-        <section className="listaPedidos">
+      <article className="container">
+        <section className="Pedidos">
           <div className="tituloBtn">
-            Mostrar Pedidos
+            <a id="botonPedidos" href="/pedidos">Mostrar Pedidos</a>
           </div>
         </section>
         <section className="Analisis">
           <div className="tituloBtn">
-            Mostrar Analisis
+            <a id="botonAnalisis" href="/analisis">Mostrar Analisis</a>
           </div>
         </section>
       </article>
