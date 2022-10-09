@@ -23,17 +23,28 @@ function App() {
         <div className="label">
           <article className="titulo">Bienvenido</article>
         </div>
-        <div className="label">
-          <article className="titulo">Bienvenido</article>
-        </div>
-        <div className="label">
-          <article className="titulo">Bienvenido</article>
-        </div>
-        
-
-
       </main>
+      <article className="pedidos">
+        <section className="listaPedidos">
+          <div className="tituloBtn">
+            Mostrar Pedidos
+          </div>
+        </section>
+        <section className="Analisis">
+          <div className="tituloBtn">
+            Mostrar Analisis
+          </div>
+        </section>
+      </article>
     </div>
+    <footer>
+      <div className="container">
+        <div className="copyright">
+          <span>Copyrigth &copy; Cala Analytics</span>
+        </div>
+
+      </div>
+    </footer>
 
 
 
