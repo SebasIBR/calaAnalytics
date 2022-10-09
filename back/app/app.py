@@ -7,11 +7,11 @@ app= Flask(__name__)
 def index():
     return "Hola Mundo"
 
-@app.route('/datosUsuarios')
+@app.route('/pedidos')
 def usuarios():
     return "ApiTXT"
 
-@app.route('/datosProductos')
+@app.route('/analisis')
 def productos():
     return "ApiProdcutos"
 
