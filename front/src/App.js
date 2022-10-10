@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
 import logo from './logo.JPG'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {faBoxOpen, faUser, faUsers} from '@fortawesome/free-solid-svg-icons'
+import {BrowserRouter as Router,Route, Switch} from "react-router-dom"
 
 function App() {
   return (
+  <Router>
   <div>
     <div>
       <title>Cala Analitycs</title>
@@ -24,6 +24,14 @@ function App() {
           <article className="titulo">Bienvenido</article>
         </div>
       </main>
+      <Switch>
+        <Route path="/analisis">
+          <h1>analisis</h1>
+        </Route>
+        <Route path="/pedidos">
+          <h1>pedidos</h1>
+        </Route>
+      <Route path="/">
       <article className="container">
         <section className="Pedidos">
           <div className="tituloBtn">
@@ -36,28 +44,18 @@ function App() {
           </div>
         </section>
       </article>
+      </Route>
+      </Switch>
     </div>
     <footer>
       <div className="container">
         <div className="copyright">
           <span>Copyrigth &copy; Cala Analytics</span>
         </div>
-
       </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-      
+    </footer>      
   </div>
-
-
+  </Router>
   )
 }
 export default App;
