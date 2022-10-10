@@ -52,6 +52,13 @@ and (min-device-width: 476px)
   border: radius 18px;
   justify-content: space-around;
 }
+.label{
+  width:1000px;
+  background-color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
 .container{
   display: flex;
   padding: 10px;

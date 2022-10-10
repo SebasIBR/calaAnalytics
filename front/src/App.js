@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import logo from './logo.JPG'
-import {BrowserRouter as Router,Route, Switch} from "react-router-dom"
+import {BrowserRouter as Router,Route, Switch, Link} from "react-router-dom"
 
 function App() {
   return (
@@ -21,17 +21,25 @@ function App() {
       </div>
       <main className="main">
         <div className="label">
-          <article className="titulo">Bienvenido</article>
+          <article className="titulo">
+           <a href="/">Inicio</a>
+          </article>
+          <article className="titulo">Sobre Nosotros</article>
+          <article className="titulo">Contacto</article>
         </div>
       </main>
       <Switch>
-        <Route path="/analisis">
+        <Route path="/analisis" exact>
+        <article className="container">
           <h1>analisis</h1>
+        </article>
         </Route>
-        <Route path="/pedidos">
+        <Route path="/pedidos" exact>
+        <article className="container">
           <h1>pedidos</h1>
+        </article>
         </Route>
-      <Route path="/">
+      <Route path="/" exact>
       <article className="container">
         <section className="Pedidos">
           <div className="tituloBtn">
