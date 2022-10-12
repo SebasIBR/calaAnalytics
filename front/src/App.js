@@ -1,6 +1,9 @@
 import React from "react";
 import './App.css';
 import logo from './logo.JPG'
+import Tabla from './components/tabla'
+import Analisis from './components/analisis'
+
 import {BrowserRouter as Router,Route, Switch, Link} from "react-router-dom"
 
 function App() {
@@ -31,12 +34,12 @@ function App() {
       <Switch>
         <Route path="/analisis" exact>
         <article className="container">
-          <h1>analisis</h1>
+          <Analisis/>
         </article>
         </Route>
         <Route path="/pedidos" exact>
         <article className="container">
-          <h1>pedidos</h1>
+          <Tabla/>
         </article>
         </Route>
       <Route path="/" exact>
